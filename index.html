@@ -2,14 +2,14 @@
 <html>
 	<head></head>
 	<body>
-		<input id="passcode" onchange="updateKey()">
+		<input id="passcode" onchange="updateKey()" placeholder="passcode">
 		<div id="encryptDiv">
-			<input id="plaintextMessage">
+			<input id="plaintextMessage" placeholder="text">
 			<button id="encrypt" onclick="outputEncryptedString()">Encrypt</button>
 			<span id="encryptedOutput"></span>
 		</div>
 		<div id="decryptDiv">
-			<input id="codeMessage">
+			<input id="codeMessage" placeholder="code">
 			<button id="decrypt" onclick="outputDecryptedString()">Decrypt</button>
 			<span id="decryptedOutput"></span>
 		</div>
