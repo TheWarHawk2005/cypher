@@ -3,8 +3,9 @@
 	<head></head>
 	<body>
 		<input id="passcode" onchange="updateKey()" placeholder="passcode">
+		<p><small>valid characters: a-z, [space], and "."</small></p>
 		<div id="encryptDiv">
-			<input id="plaintextMessage" placeholder="text">
+			<input id="plaintextMessage" placeholder="text" type="text">
 			<button id="encrypt" onclick="outputEncryptedString()">Encrypt</button>
 			<span id="encryptedOutput"></span>
 		</div>
