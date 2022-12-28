@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<input id="passcode" onchange="updateKey()">
+		<div id="encryptDiv">
+			<input id="plaintextMessage">
+			<button id="encrypt" onclick="outputEncryptedString()">Encrypt</button>
+			<span id="encryptedOutput"></span>
+		</div>
+		<div id="decryptDiv">
+			<input id="codeMessage">
+			<button id="decrypt" onclick="outputDecryptedString()">Decrypt</button>
+			<span id="decryptedOutput"></span>
+		</div>
+		
+	</body>
+</html>
+
+<script src="index.js"></script>
