@@ -1,5 +1,5 @@
 const outputEncryptedString = function() {
-	let input = document.getElementById('plaintextMessage').value
+	let input = document.getElementById('plaintextMessage').value.toUpperCase()
 	document.getElementById('encryptedOutput').innerHTML = encrypt(input)
 }
 
