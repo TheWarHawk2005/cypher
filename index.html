@@ -4,10 +4,29 @@
 		<style>
 			body {
 				text-align: center;
+				color: #544B3D;
+				background-color: #A6ECE0;
 			}
 			input {
+				font-size: medium;
+				background-color:#ffffff;
+				color: #544B3D;
+				margin: 1% 0% 1% 0%;
 				height: 30px;
-				width: 80%
+				width: 80%;
+				border-radius: 5px;
+				border-color: #4C8577;
+				border-style: solid;
+				border-width: 5px;
+			}
+			span {
+				background-color: #7ADFBB;
+			}
+			#passcode {
+				width: 50%;
+			}
+			.button {
+				width: 10%;
 			}
 			#footer {
 				position:fixed;
@@ -21,13 +40,13 @@
 		<p><small>valid characters: a-z, [space], and "."</small></p>
 		<div id="encryptDiv">
 			<input id="plaintextMessage" placeholder="text" type="text">
-			<button id="encrypt" onclick="outputEncryptedString()">Encrypt</button>
+			<input class="button" type="button" id="encrypt" onclick="outputEncryptedString()" value="Encrypt">
 			<br>
 			<span id="encryptedOutput"></span>
 		</div>
 		<div id="decryptDiv">
 			<input id="codeMessage" placeholder="code">
-			<button id="decrypt" onclick="outputDecryptedString()">Decrypt</button>
+			<input class="button" type="button" id="decrypt" onclick="outputDecryptedString()" value="Decrypt">
 			<br>
 			<span id="decryptedOutput"></span>
 		</div>
