@@ -1,18 +1,20 @@
+// ENCRYPT INPUT BOX
 const outputEncryptedString = function() {
 	let input = document.getElementById('plaintextMessage').value.toUpperCase()
 	document.getElementById('encryptedOutput').innerHTML = encrypt(input)
 }
 
+// DECRYPT INPUT BOX
 const outputDecryptedString = function() {
 	let input = document.getElementById('codeMessage').value
 	document.getElementById('decryptedOutput').innerHTML = decrypt(input)
 }
 
+// UPDATE KEY
 var key
 const updateKey = function() {
 	let passcode = document.getElementById('passcode').value
-	key = cyrb53(passcode).toString()
-	console.log(key)
+	key = cyrb53(passcode).toString() // convert alphanumeric passcode to numeric key
 }
 
 // VIC CHECKERBOARD
@@ -59,7 +61,6 @@ const decrypt = function(str) {
 	var subtractedoutput = ''
 	var subtractednumber
 	var keyindex = 0
-	//str = str.toString()
 	for (i=0;i<str.length;i++) {
 		subtractednumber = parseInt(str[i]) - parseInt(key[keyindex])
 		if (subtractednumber<0) {subtractednumber = subtractednumber + 10} //if number is negative, add 10.
