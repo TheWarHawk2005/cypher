@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
+	<head>
+		<style>
+			body {
+				text-align: center;
+			}
+			input {
+				height: 30px;
+				width: 80%
+			}
+			#footer {
+				position:fixed;
+				bottom: 0;
+			}
+		</style>
+	</head>
 	<body>
+		<h1>CYPHER</h1>
 		<input id="passcode" onchange="updateKey()" placeholder="passcode">
 		<p><small>valid characters: a-z, [space], and "."</small></p>
 		<div id="encryptDiv">
 			<input id="plaintextMessage" placeholder="text" type="text">
 			<button id="encrypt" onclick="outputEncryptedString()">Encrypt</button>
+			<br>
 			<span id="encryptedOutput"></span>
 		</div>
 		<div id="decryptDiv">
 			<input id="codeMessage" placeholder="code">
 			<button id="decrypt" onclick="outputDecryptedString()">Decrypt</button>
+			<br>
 			<span id="decryptedOutput"></span>
 		</div>
 		
+		<div id="footer">
+			<p>Built by Louis Harrison</p>
+		</div>
 	</body>
 </html>
 
